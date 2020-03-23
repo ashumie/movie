@@ -1,0 +1,44 @@
+h4{ padding-top: 10px;}
+
+fieldset{border: 1px solid lightgray;}
+
+.h3 span{font-size: 18px;}
+
+.lead {line-height: .5;}
+
+.caption {
+  padding-top: 80px;
+  height: 350px;
+  background-image: url("boblandscape.jpg");
+  background-size: cover;}
+
+#slide h2, .lead {
+  color: white;
+  position: relative;
+  animation-name: caption;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes caption {
+  0% {top: -120px}
+  100% {top: 100px}
+}
+
+.contact {
+  color: white;
+  padding: 10px 12px 10px 12px;
+  margin-top: 100px;
+  text-decoration: none;
+  border: lightgray 1px solid;
+  animation-name: contact;
+  background-color: #09d13a;
+  transition-property: transform;
+  transition-duration: 2s
+}
+
+.contact:hover {
+  transform: rotateY(180deg);
+  opacity: .25;
+  color: white;
+}
